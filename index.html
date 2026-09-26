@@ -1,1 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Residential & Commercial Cleaning in Philadelphia, PA | Elite Jawn Cleaning Co.</title>
+
+  <meta name="description" content="Trusted residential and commercial cleaning in Philadelphia and surrounding suburbs. Book Elite Jawn Cleaning Co. today or get a free estimate.">
+
+  <style>
+
+    /* =========================
+       BRAND COLORS
+    ========================= */
+
+    :root {
+      --white: #ffffff;
+      --ivory: #fffdf9;
+      --pink: #ff1493;
+      --pink-light: #ff69b4;
+      --pink-soft: #fff0f8;
+      --black: #111111;
+      --black-soft: #222222;
+      --gold: #c9a227;
+      --gold-light: #e5c65c;
+      --gray: #666666;
+      --light-gray: #f5f5f5;
+      --border: #ead9c0;
+    }
+
+
+    /* =========================
+       RESET
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      background: var(--white);
+      border-bottom: 3px solid var(--gold);
+      padding: 16px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo-text {
+      font-size: 1.15rem;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      white-space: nowrap;
+      color: var(--black);
+    }
+
+    .logo-text span {
+      color: var(--pink);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      font-weight: 800;
+      font-size: 0.88rem;
+      color: var(--black);
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--pink);
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 100px 6%;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 50% 40%,
+          rgba(255,20,147,0.10),
+          transparent 45%
+        ),
+        linear-gradient(
+          135deg,
+          #ffffff 0%,
+          #fff8fc 55%,
+          #fffdf8 100%
+        );
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255,20,147,0.08);
+      filter: blur(70px);
+      top: -120px;
+      left: -100px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: rgba(201,162,39,0.10);
+      filter: blur(65px);
+      bottom: -100px;
+      right: -80px;
+    }
+
+    .hero-content {
+      max-width: 1000px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      color: var(--pink);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 5.5rem);
+      line-height: 1.02;
+      margin-bottom: 25px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: var(--black);
+    }
+
+    .hero h1 span {
+      display: block;
+      margin-top: 10px;
+
+      background: linear-gradient(
+        90deg,
+        var(--pink),
+        var(--gold),
+        var(--pink)
+      );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      background-size: 200% auto;
+      animation: shine 5s linear infinite;
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 0 auto 35px;
+      font-size: 1.15rem;
+      color: var(--gray);
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 8px;
+      font-weight: 900;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(
+        135deg,
+        var(--pink),
+        var(--pink-light)
+      );
+
+      color: var(--white);
+
+      box-shadow:
+        0 6px 20px rgba(255,20,147,0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow:
+        0 9px 25px rgba(255,20,147,0.35);
+    }
+
+    .btn-secondary {
+      border: 2px solid var(--black);
+      color: var(--black);
+      background: var(--white);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+      border-color: var(--pink);
+      color: var(--pink);
+    }
+
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      padding: 85px 6%;
+      position: relative;
+    }
+
+    .section-inner {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 12px;
+      font-weight: 900;
+      color: var(--black);
+    }
+
+    .section-title h2::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 4px;
+      margin: 15px auto 0;
+
+      background: linear-gradient(
+        90deg,
+        var(--pink),
+        var(--gold)
+      );
+
+      border-radius: 20px;
+    }
+
+    .section-title p {
+      color: var(--gray);
+      margin-top: 12px;
+    }
+
+
+    /* =========================
+       GRIDS
+    ========================= */
+
+    .trust-grid,
+    .service-grid,
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+
+      position: relative;
+      overflow: hidden;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.07);
+
+      transition: 0.3s ease;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+
+      background: linear-gradient(
+        90deg,
+        var(--pink),
+        var(--gold)
+      );
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+
+      border-color: var(--pink);
+
+      box-shadow:
+        0 12px 30px rgba(255,20,147,0.12);
+    }
+
+    .card h3 {
+      color: var(--pink);
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+      font-weight: 900;
+    }
+
+    .card p {
+      color: #555555;
+    }
+
+
+    /* =========================
+       WHY CHOOSE ELITE
+    ========================= */
+
+    .trust-grid .card {
+      background: #fffdf9;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    #services {
+      background:
+        linear-gradient(
+          180deg,
+          #ffffff,
+          #fff8fc,
+          #ffffff
+        );
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background:
+        linear-gradient(
+          135deg,
+          #111111 0%,
+          #1c1c1c 70%,
+          #111111 100%
+        );
+
+      color: var(--white);
+
+      border-top: 4px solid var(--gold);
+      border-bottom: 4px solid var(--pink);
+    }
+
+    .about .section-title h2 {
+      color: var(--white);
+    }
+
+    .about .section-title p {
+      color: #dddddd;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+
+      background: rgba(255,255,255,0.05);
+
+      padding: 35px;
+
+      border-radius: 18px;
+
+      border: 1px solid rgba(201,162,39,0.5);
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .about-content p {
+      margin-bottom: 20px;
+      color: #eeeeee;
+    }
+
+    .about-content p:last-child {
+      margin-bottom: 0;
+      color: var(--gold-light);
+      font-weight: 900;
+    }
+
+
+    /* =========================
+       PACKAGES
+    ========================= */
+
+    .packages {
+      background:
+        linear-gradient(
+          180deg,
+          #fffdf9,
+          #fff5fa,
+          #ffffff
+        );
+    }
+
+    .package-card {
+      position: relative;
+    }
+
+    .package-card h3 {
+      font-size: 1.25rem;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--black);
+      margin: 8px 0 12px;
+    }
+
+    .hours {
+      color: var(--pink);
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+    }
+
+
+    /* =========================
+       MORE THAN CLEAN
+    ========================= */
+
+    section:not(.hero):not(.packages):not(.about):not(.cta) .card {
+      background: var(--white);
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      text-align: center;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(255,20,147,0.18),
+          transparent 55%
+        ),
+        linear-gradient(
+          135deg,
+          #fff4fa,
+          #ffffff,
+          #fffaf0
+        );
+
+      border-top: 4px solid var(--pink);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .cta h2 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      margin-bottom: 15px;
+      font-weight: 900;
+      color: var(--black);
+    }
+
+    .cta p {
+      color: var(--gray);
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: var(--black);
+      padding: 50px 6%;
+      text-align: center;
+      color: #bbbbbb;
+
+      border-top: 4px solid var(--gold);
+    }
+
+    footer strong {
+      color: var(--white);
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    .contact-info {
+      margin: 18px 0;
+      line-height: 2;
+    }
+
+    .contact-info a {
+      color: var(--pink);
+      transition: 0.2s;
+    }
+
+    .contact-info a:hover {
+      color: var(--gold-light);
+    }
+
+    footer p {
+      margin-top: 8px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 13px 5%;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .logo-text {
+        font-size: 1rem;
+      }
+
+      nav {
+        gap: 10px 15px;
+      }
+
+      nav a {
+        font-size: 0.78rem;
+      }
+
+      .hero {
+        min-height: 78vh;
+        padding: 75px 5%;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 65px 5%;
+      }
+
+      .section-title {
+        margin-bottom: 35px;
+      }
+
+      .card {
+        padding: 23px;
+      }
+
+      .about-content {
+        padding: 25px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="nav">
+
+    <div class="logo-text">
+      ELITE <span>JAWN</span> CLEANING CO.
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main id="home">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      Philadelphia's Cleaning Company
+    </div>
+
+    <h1>
+      Trusted Home & Commercial Cleaners
+
+      <span>
+        Serving Philadelphia & Surrounding Suburbs
+      </span>
+    </h1>
+
+    <p>
+      Clean Spaces, Elite Standards. Professional residential and commercial
+      cleaning with a little Philly charm.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="btn btn-primary"
+        href="https://elitejawncleaningco.setmore.com?utm_source=in-app&utm_medium=iosapp&utm_campaign=settsharebp"
+        target="_blank"
+        rel="noopener noreferrer">
+        Book Your Cleaning Today
+      </a>
+
+      <a
+        class="btn btn-secondary"
+        href="#contact">
+        Get a Free Estimate
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE ELITE
+========================= -->
+
+<section>
+
+  <div class="section-inner">
+
+    <div class="section-title">
+
+      <h2>
+        Why Choose Elite Jawn?
+      </h2>
+
+      <p>
+        Reliable cleaning. Personal service. Elite standards.
+      </p>
+
+    </div>
+
+
+    <div class="trust-grid">
+
+
+      <div class="card">
+
+        <h3>
+          $1 Million Insured & Bonded
+        </h3>
+
+        <p>
+          Your home or business is protected by a professionally insured
+          and bonded cleaning company.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          100% Satisfaction Guarantee
+        </h3>
+
+        <p>
+          If something isn't right, let us know and we'll work to make it right.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Flexible Scheduling
+        </h3>
+
+        <p>
+          Same-day, daily, weekly, biweekly, monthly and one-time cleaning
+          options are available.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Free Estimates
+        </h3>
+
+        <p>
+          Get an in-person estimate or send pictures and videos for a virtual
+          estimate.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+  <div class="section-inner">
+
+    <div class="section-title">
+
+      <h2>
+        Cleaning Services
+      </h2>
+
+      <p>
+        Whatever kind of jawn you've got, we're here to make it shine.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+      <div class="card">
+
+        <h3>
+          Residential Cleaning
+        </h3>
+
+        <p>
+          Routine housekeeping and detailed home cleaning customized around
+          your needs.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Deep Cleaning
+        </h3>
+
+        <p>
+          Detailed top-to-bottom cleaning that tackles buildup, grime and
+          overlooked areas.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Move-In / Move-Out
+        </h3>
+
+        <p>
+          Thorough cleaning designed to leave a property fresh and ready for
+          its next chapter.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Commercial Cleaning
+        </h3>
+
+        <p>
+          Professional cleaning and upkeep for offices, businesses and
+          commercial spaces.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Airbnb Turnovers
+        </h3>
+
+        <p>
+          Guest-ready cleaning designed to keep short-term rental properties
+          turnover-ready.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Post-Construction Cleaning
+        </h3>
+
+        <p>
+          Heavy-duty cleaning for dust, debris and buildup after remodeling
+          and construction.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Event Cleaning
+        </h3>
+
+        <p>
+          Pre-event setup cleaning and post-event cleanup to get your space
+          ready and back to normal.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Custom Cleaning
+        </h3>
+
+        <p>
+          Need something specific? Tell us what your space needs and we'll
+          build the right cleaning service for you.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PACKAGES
+========================= -->
+
+<section id="packages" class="packages">
+
+  <div class="section-inner">
+
+    <div class="section-title">
+
+      <h2>
+        Our Cleaning Packages
+      </h2>
+
+      <p>
+        Choose the jawn that fits your space.
+      </p>
+
+    </div>
+
+
+    <div class="package-grid">
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Side Jawn
+        </h3>
+
+        <div class="hours">
+          2 HOURS
+        </div>
+
+        <div class="price">
+          $99
+        </div>
+
+        <p>
+          Perfect for quick touch-ups and light refreshes to keep your space
+          looking clean, polished and guest-ready.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Main Jawn
+        </h3>
+
+        <div class="hours">
+          5 HOURS
+        </div>
+
+        <div class="price">
+          $150
+        </div>
+
+        <p>
+          A reliable full-home standard cleaning designed to maintain a fresh,
+          comfortable and consistently clean living space.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Thorough Jawn
+        </h3>
+
+        <div class="hours">
+          6 HOURS
+        </div>
+
+        <div class="price">
+          $225
+        </div>
+
+        <p>
+          A detailed top-to-bottom deep clean that tackles buildup, grime and
+          overlooked areas throughout your home.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Whole Jawn
+        </h3>
+
+        <div class="hours">
+          12–24 HOURS
+        </div>
+
+        <div class="price">
+          $399+
+        </div>
+
+        <p>
+          A premium top-to-bottom reset designed to address the home as a
+          whole—not just perform a routine or deep cleaning.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Airbnb Jawn
+        </h3>
+
+        <div class="hours">
+          4 HOURS
+        </div>
+
+        <div class="price">
+          $120
+        </div>
+
+        <p>
+          Hospitality-level rental cleaning crafted to impress guests and keep
+          your property turnover-ready.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Movin On Jawn
+        </h3>
+
+        <div class="hours">
+          5 HOURS
+        </div>
+
+        <div class="price">
+          $275
+        </div>
+
+        <p>
+          Move-in or move-out cleaning designed to leave homes spotless,
+          sanitized and ready for the next chapter.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Built Up Jawn
+        </h3>
+
+        <div class="hours">
+          6 HOURS
+        </div>
+
+        <div class="price">
+          $300
+        </div>
+
+        <p>
+          Heavy-duty post-construction cleaning focused on dust, debris and
+          renovation buildup.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Business Jawn
+        </h3>
+
+        <div class="hours">
+          4 HOURS
+        </div>
+
+        <div class="price">
+          $250
+        </div>
+
+        <p>
+          Professional commercial cleaning and upkeep for offices, businesses
+          and commercial spaces.
+        </p>
+
+      </div>
+
+
+      <div class="card package-card">
+
+        <h3>
+          The Party Jawn
+        </h3>
+
+        <div class="hours">
+          4 HOURS
+        </div>
+
+        <div class="price">
+          $175
+        </div>
+
+        <p>
+          Event setup and cleanup to get your space ready before the party and
+          back to normal afterward.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="about">
+
+  <div class="section-inner">
+
+    <div class="section-title">
+
+      <h2>
+        About Elite Jawn Cleaning Co.
+      </h2>
+
+    </div>
+
+
+    <div class="about-content">
+
+      <p>
+        Welcome to Elite Jawn Cleaning Co., where luxury cleaning meets Philly
+        charm. We believe a clean space is more than just sparkling surfaces—
+        it's comfort, peace of mind, and one less thing for you to worry about.
+      </p>
+
+      <p>
+        As a locally owned and operated cleaning company, we're dedicated to
+        providing dependable, detail-oriented service with a personal touch.
+        Whether you need routine housekeeping, a deep clean, move-in or
+        move-out services, commercial cleaning, or an Airbnb turnover, we
+        treat every home and business like it's our own.
+      </p>
+
+      <p>
+        Around Philadelphia, everything's a jawn—and no matter what kind of
+        jawn you've got, we're here to make that jawn shine!
+      </p>
+
+      <p>
+        Our mission is simple: deliver clean spaces with elite standards,
+        exceptional customer care, and create clean, welcoming spaces that
+        let you focus on what matters most.
+      </p>
+
+      <p>
+        When your jawn needs cleaning, trust the jawn that does it the elite
+        way—the right way—Elite Jawn Cleaning Co.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     MORE THAN CLEAN
+========================= -->
+
+<section>
+
+  <div class="section-inner">
+
+    <div class="section-title">
+
+      <h2>
+        More Than Clean
+      </h2>
+
+    </div>
+
+
+    <div class="card">
+
+      <p>
+        Elite Jawn Cleaning Co. gives you more than a clean home—we give you
+        your time back. Enjoy reliable, detailed, customized cleaning with
+        flexible scheduling, professional products, free estimates, and the
+        peace of mind of a $1 million insured and bonded cleaning company.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT / CTA
+========================= -->
+
+<section id="contact" class="cta">
+
+  <div class="section-inner">
+
+    <h2>
+      Ready to Make Your Jawn Shine?
+    </h2>
+
+    <p>
+      Book your cleaning today or contact us for a free in-person or virtual
+      estimate.
+    </p>
+
+
+    <div class="buttons">
+
+
+      <a
+        class="btn btn-primary"
+        href="https://elitejawncleaningco.setmore.com?utm_source=in-app&utm_medium=iosapp&utm_campaign=settsharebp"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        Book Your Cleaning Today
+
+      </a>
+
+
+      <a
+        class="btn btn-secondary"
+        href="mailto:Elitejawncleaningco@gmail.com">
+
+        Get a Free Estimate
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <strong>
+    ELITE JAWN CLEANING CO.
+  </strong>
+
+
+  <div class="contact-info">
+
+    Philadelphia, PA & Surrounding Suburbs
+
+    <br>
+
+    <a href="tel:2675097709">
+      (267) 509-7709
+    </a>
+
+    <br>
+
+    <a href="mailto:Elitejawncleaningco@gmail.com">
+      Elitejawncleaningco@gmail.com
+    </a>
+
+  </div>
+
+
+  <p>
+    Clean Spaces, Elite Standards.
+  </p>
+
+
+  <p>
+    © 2026 Elite Jawn Cleaning Co. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+</body>
+</html>
